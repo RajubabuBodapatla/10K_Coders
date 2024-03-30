@@ -3,57 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS Album</title>
+    <title>My resume</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    -->
+    
     <style>
-        body{
-            background-image:url("./Assets/Bts.jpg");
-        }
-        .album{
+        .container{
+            border: solid 2px black;
+            /* height: 1000px; */
+            width: 60%;
+            margin: auto;
             display: flex;
-            
         }
-        .song{
-            display: flex;
-            max-width: 270px;
-            flex-direction: column;
-            align-items: center;
-            margin:auto;
+        .left{
+            border: solid 2px black;
+            width: 30%;
+            background-color:rgba(255, 68, 0, 0.462);
+            color: white;
+            padding-left: 20px;
         }
-        audio{
-            height: 30px;
-            width:220px;
+        p{
+            color: black;
         }
         img{
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 50px;
         }
-        
+        .imagecontainer{
+           display: flex;
+           margin-top: 50px;
+           padding-left: 35px;
+           border-radius: 50%;
+           width: 120px;
+           height: 120px;
+           border-radius: 50px;
+        }
+        h1{
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+        .contact{
+            display: block;
+        }
+        .technical{
+            text-decoration: none;
+        }
+        h2{  
+            text-decoration: underline;
+        }
+        .right{
+            display: inline;
+            float: right;
+            padding-left: 20px;
+        }
+        .objective{
+            
+            font-size: 25px;
+            margin-bottom: -10px;
+        }
+        /* .study{
+            list-style-type: none;
+         
+        } */
+        .signature{
+            float: right;
+            padding-right: 20px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #course{
+            font-weight: bold;
+        }
+        #cgpa{
+            float: right;
+            padding-right: 250px;
+           
+        }
+        #para{
+            color: white;
+        }
+
     </style>
 </head>
 <body>
-     <br/>
-    <img src="./Assets/BTS2.jpg" height="80px" width="90px" alt="bts logo" style="border-radius: 5px; margin-left: 730px;"><br/>
-    <span style="margin-left: 540px;font-family: cursive;font-size: 70px;color:#6bb077;">Map of the Soul: 7</span><br/><br/>
-<div class="album">
-    <span class="song">
-    <img src="./Assets/boy with luv.jpg" height="250px" width="200px" style="border-radius: 5px; "><br/>
-    <audio controls src="./Assets/03. Boy With Luv (Japanese Version).mp3"><br/>
-    </span>
-    <span class="song">
-        <img src="./Assets/fake love.jpg" height="250px" width="200px" style="border-radius: 5px; "><br/>
-        <audio controls src="./Assets/08. FAKE LOVE (Version Japanese).mp3"></audio>
-    </span>
-    <span class="song">
-        <img src="./Assets/idol.jpg"  height="250px" width="200px" style="border-radius: 5px; "><br/>
-        <audio controls src="./Assets/06. IDOL (Japanese Version).mp3"></audio>
-    </span>
-    <span class="song">
-        <img src="./Assets/black sawn.jpg" height="250px" width="200px"style="border-radius: 5px; "><br/>
-        <audio controls src="./Assets/09. Black Swan (Japanese Ver.).mp3"></audio>
-    </span>
-    <span class="song">
-        <img src="./Assets/ON.jpg" height="250px" width="200px" style="border-radius: 5px; "><br/>
-        <audio controls src="./Assets/10. ON (Japanese Ver.).mp3"></audio>
-    </span>
-</div>
+    <div class="container">
+    <div class="left">
+        <div class="imagecontainer">
+            <img src="src\images\profile photo.jpg">   
+        </div>
+        <div class="contact">
+            <h2>contacts</h2>
+           
+            <i class='bx bx-envelope' >Bommibhargavi@gmail.com</i>
+            <i class='bx bxs-phone-call' >8332969676</i>
+            <i class='bx bxs-edit-location' >Begumpet, Hyderabad</i>
+
+        </div>
+        <div class="technical">
+            <h2>Technical skills</h2>
+            <ul>
+                <li> <i class='bx bxl-java' >Java</i></li>
+           
+           <li> <i class='bx bxl-python'>Python</i></li>
+           <li> <i class='bx bxl-html5' >HTML5</i></li>
+            <li><i class='bx bxl-css3' >CSS3</i></li>
+            <li><i class='bx bx-data' >Oracle</i></li>
+            </ul>
+        </div>
+        <div class="languges">
+            <h2>languages</h2>
+            
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Teugu</li>
+            </ul>
+        </div>
+        <div class="certifications">
+            <h2>Certifications</h2>
+            
+                <p id="para">Certified in Introduction to Python- By Infosys Springboard.<p>
+                <p id="para">Certified in Python(Basics) - By Courcera.<p>
+                <p id="para">Certified in Antenna Designing by NIAR</p>  
+        </div>
+        <div class="intrests">
+            <h2>Intrests</h2>
+            <p id="para">Home Gardening</p>
+            <p id="para">Designing</p>
+        </div>
+    </div>
+        <div class="right">
+            <h1>Bommi Bhargavi Lakshmi</h1>
+            <p class="objective">Objective</p>
+            <hr>
+            <p>Seeking a Challenging position in a reputed Organization where i can learn new skills, expand my knowledge, and leverage my learnings. to get an opportunity where i can make the best of my potential and contribute to the Origanization's growth.</p>
+            <p class="objective">Education </p>
+            <hr>
+            <!-- <div class="study">
+                <span id="course">B.Tech ECE (2023)</span>
+                <span>GMR Institute of Technology</span>
+                <span id="cgpa">8.3</span>
+                <span id="course">Intermediate (2019)</span>
+                <span>Narayana junior college</span>
+                <span id="cgpa">9.56</span>
+                <span id="course">SSC (2017)</span>
+                <span>Narayana School</span>
+                <span id="cgpa">9.5</span>   
+            </div> -->
+            <div class="study">
+                <ul>
+                    <li id="course">B.Tech (ECE)</li>
+                    <li>GMR Institute of Technology</li>
+                    <li id="cgpa">8.3</li>
+                    <li>2019-2023</li>
+                </ul>
+                <ul>
+                    <li id="course">Intermediate</li>
+                    <li>Narayana</li>
+                    <li id="cgpa">9.7</li>
+                    <li>2017-2019</li>
+                </ul>
+                <ul>
+                    <li id="course">SSC</li>
+                    <li>Narayana</li>
+                    <li id="cgpa">9.7</li>
+                    <li>2016-2017</li>
+                </ul>
+
+            </div>
+            <div class="projects">
+                <p class="objective">Projects</p>
+                <hr>
+                <ol>
+                   <li>Corn Leaf Disease Detection Using Convolution Neural Network. </li> 
+                <li>Automated Writing and Drawing Machine.</li>
+                <li>Smart Home Energy Management System using IOT</li>
+                </ol>
+                
+            </div>
+            <div class="workshop">
+                <p class="objective">Workshop</p>
+                <hr>
+                <ul>
+                    <li>Introduction to Arduino UNO</li>
+                </ul>
+                
+            </div>
+            <div class="internship">
+                <p class="objective">Internship </p>
+                <hr>
+                <ul>
+                    <li> National institute of Amateur Radio During the internship i heve learned how to design and install an antenna and also cleared ASOC exam and Licensed with VUZMZD as my call sign.</li>
+                </ul>
+                
+            </div>
+            <div class="decleration">
+                <p class="objective">Deceleration </p>
+                <hr>
+                <p>I hereby declare that the information provided above is true to the best of my knowledge.</p>
+            </div>
+            <div class="signature">
+                <p>BHARGAVI LAKSHMI</p>
+            </div>
+           
+
+        </div>
+       
+        
+    </div>
 </body>
 </html>
